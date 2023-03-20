@@ -29,6 +29,9 @@ in_kb_s.add(types.InlineKeyboardButton(
 
 
 async def show(call: types.CallbackQuery):
+    """
+        Показывает товар
+    """
     await call.message.answer(
         text="Выберите бренд парфюма:",
         reply_markup=kb
@@ -36,12 +39,18 @@ async def show(call: types.CallbackQuery):
 
 
 async def show_b(message: types.Message):
+    """
+       Показать виды выбранного товара
+    """
     await message.reply(
       text="Какой запах, BLANCE вам нужен?",
       reply_markup=in_kb
     )
 
 async def show_tf(message: types.Message):
+    """
+       Показать виды выбранного товара
+    """
     await message.reply(
       text="Какой запах, TOM FORD вам нужен?",
       reply_markup=in_kb_s
