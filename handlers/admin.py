@@ -1,5 +1,4 @@
 from aiogram import types
-
 async def check_user_is_admin(message: types.Message):
     """
     Проверка на админа
