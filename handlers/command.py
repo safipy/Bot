@@ -1,4 +1,4 @@
-from aiogram import  types
+from aiogram import types
 
 in_kb = types.InlineKeyboardMarkup()
 in_kb.add(types.InlineKeyboardButton(
